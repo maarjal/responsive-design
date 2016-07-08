@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /*border: 2px solid tomato;*/
+  border: 2px solid tomato;
   width: 72%;
   height: 80%;
   margin-top: 5%;
@@ -37,7 +37,7 @@ body {
 
 ul {
   list-style: none;
-  /*border: 2px solid hotpink;*/
+  border: 2px solid hotpink;
   width: 30%;
   padding: 3%;
   margin: 2%;
@@ -60,7 +60,7 @@ a {
 .main:after {
   content: "Tallinn, Estonia";
   text-transform: uppercase;
-  /*border: 2px solid tomato;*/
+  border: 2px solid tomato;
   position: absolute;
   top: 80%;
   left: 2%;
@@ -82,7 +82,7 @@ a {
 
 h3 {
   text-align: center;
-  /*border: 2px solid darkblue;*/
+  border: 2px solid darkblue;
   text-transform: uppercase;
   margin-top: 25%;
   font-weight: normal;
@@ -102,4 +102,44 @@ h3 {
 
 .main {
   float: left;
+}
+
+@media screen and (max-width: 1100px) {
+  .aside1, .aside2 {
+    float: none;
+    display: inline-block;
+    width: 48.5%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
+  .aside1 {
+    margin-right: 2%;
+  }
+
+  .asides {
+    width: 90%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 90%;
+  }
+
+  .main:after {
+    position: absolute;
+    top: 48%;
+    left: 7.5%;
+  }
 }
