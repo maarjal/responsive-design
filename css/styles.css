@@ -34,14 +34,14 @@ h1 {
   border-top-right-radius: .3em;
   /*border: 2px solid hotpink;*/
   color: inherit;
-  background: lightgrey;
+  background: #EDF2F4;
   margin: 0;
 }
 
 .nav-links-small-screen {
   padding: 2%;
   margin-top: 0;
-  background: lightgrey;
+  background: #EAD3D3;
   border-bottom-left-radius: .3em;
   border-bottom-right-radius: .3em;
   /*border: 2px solid tomato;*/
@@ -105,7 +105,7 @@ a {
   height: 100%;
 }
 
-.aside1 {
+.aside-one {
   float: right;
   width: 22%;
   height: 37%;
@@ -126,7 +126,7 @@ h3 {
   padding: 2%;
 }
 
-.aside2 {
+.aside-two {
   float: right;
   height: 37%;
   width: 22%;
@@ -136,10 +136,10 @@ h3 {
   border-radius: .3em;
 }
 
-.aside3 {
+.aside-three {
   display: none;
   margin-top: 3%;
-  background: white;
+  background: #EDF2F4;
   /*border: 2px solid blue;*/
   border-radius: .3em;
   padding-left: 3%;
@@ -153,7 +153,7 @@ h3 {
 }
 
 @media screen and (max-width: 1100px) {
-  .aside1, .aside2 {
+  .aside-one, .aside-two {
     float: none;
     display: inline-block;
     width: 48.5%;
@@ -162,7 +162,7 @@ h3 {
     padding: 0;
   }
 
-  .aside1 {
+  .aside-one {
     margin-right: 2%;
   }
 
@@ -208,17 +208,17 @@ h3 {
     color: white;
   }
 
-  .aside1, .aside2 {
+  .aside-one, .aside-two {
     display: block;
     width: 100%;
     height: 33%;
     margin: 0;
     padding: 0;
-    background: white;
+    background: #EDF2F4;
     /*border: 2px solid blue;*/
   }
 
-  .aside1 {
+  .aside-one {
     margin-bottom: 3%;
   }
 
@@ -254,12 +254,11 @@ h3 {
     margin-top: 10%;
   }
 
-  .aside3 {
+  .aside-three {
     display: block;
   }
 
-  .aside3 p {
+  .aside-three p {
     padding: 2%;
   }
-
 }
