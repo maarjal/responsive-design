@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .wrap {
@@ -21,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 2px solid tomato;
+  /*border: 2px solid tomato;*/
   width: 72%;
   height: 80%;
   margin-top: 5%;
@@ -36,18 +37,30 @@ body {
 
 ul {
   list-style: none;
-  border: 2px solid hotpink;
+  /*border: 2px solid hotpink;*/
   width: 30%;
   padding: 3%;
   margin: 2%;
   text-transform: uppercase;
   line-height: 1.4em;
+  background: rgba(141, 153, 174, .7);
+  color: #2B2D42;
+  border-radius: .3em;
+}
+
+li:first-child {
+  font-family: 'Oleo Script', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main:after {
   content: "Tallinn, Estonia";
   text-transform: uppercase;
-  border: 2px solid tomato;
+  /*border: 2px solid tomato;*/
   position: absolute;
   top: 80%;
   left: 2%;
@@ -61,26 +74,30 @@ ul {
   float: right;
   width: 22%;
   height: 37%;
-  background-color: tomato;
+  background: rgba(43, 45, 66, .7);
   margin-top: 5%;
   margin-right: 3%;
+  border-radius: .3em;
 }
 
 h3 {
   text-align: center;
-  border: 2px solid darkblue;
+  /*border: 2px solid darkblue;*/
   text-transform: uppercase;
   margin-top: 25%;
   font-weight: normal;
+  color: #EDF2F4;
+  padding: 2%;
 }
 
 .aside2 {
   float: right;
   height: 37%;
   width: 22%;
-  background-color: hotpink;
+  background: rgba(43, 45, 66, .7);
   margin-top: 3%;
   margin-right: 3%;
+  border-radius: .3em;
 }
 
 .main {
