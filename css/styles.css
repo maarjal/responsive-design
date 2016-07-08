@@ -32,7 +32,6 @@ h1 {
   padding-bottom: 0;
   border-top-left-radius: .3em;
   border-top-right-radius: .3em;
-  /*border: 2px solid hotpink;*/
   color: inherit;
   background: #EDF2F4;
   margin: 0;
@@ -44,35 +43,29 @@ h1 {
   background: #EAD3D3;
   border-bottom-left-radius: .3em;
   border-bottom-right-radius: .3em;
-  /*border: 2px solid tomato;*/
 }
 
 span {
   margin-right: 2%;
 }
 
-.main {
+.hero {
   background: url("../img/bracelet.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: .3em;
-  /*border: 2px solid tomato;*/
   width: 72%;
   height: 80%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-right: 3%;
+  margin: 5% 3% 5% 0;
 }
 
-.main img {
+.hero img {
   width: 100%;
-  /*border: 2px solid hotpink;*/
 }
 
 ul {
   list-style: none;
-  /*border: 2px solid hotpink;*/
   width: 30%;
   padding: 3%;
   margin: 2%;
@@ -92,33 +85,38 @@ a {
   color: inherit;
 }
 
-.main:after {
+.hero:after {
   content: "Tallinn, Estonia";
   text-transform: uppercase;
-  /*border: 2px solid tomato;*/
   position: absolute;
   top: 80%;
   left: 2%;
 }
 
-.asides {
+.asides-div {
   height: 100%;
 }
 
-.aside-one {
+.aside-one, .aside-two {
   float: right;
   width: 22%;
   height: 37%;
   background: rgba(43, 45, 66, .7);
-  margin-top: 5%;
-  padding-top: 0;
   margin-right: 3%;
   border-radius: .3em;
 }
 
+.aside-one {
+  margin-top: 5%;
+  padding-top: 0;
+}
+
+.aside-two {
+  margin-top: 3%;
+}
+
 h3 {
   text-align: center;
-  /*border: 2px solid darkblue;*/
   text-transform: uppercase;
   margin-top: 25%;
   font-weight: normal;
@@ -126,21 +124,10 @@ h3 {
   padding: 2%;
 }
 
-.aside-two {
-  float: right;
-  height: 37%;
-  width: 22%;
-  background: rgba(43, 45, 66, .7);
-  margin-top: 3%;
-  margin-right: 3%;
-  border-radius: .3em;
-}
-
 .aside-three {
   display: none;
   margin-top: 3%;
   background: #EDF2F4;
-  /*border: 2px solid blue;*/
   border-radius: .3em;
   padding-left: 3%;
   padding-right: 3%;
@@ -148,7 +135,7 @@ h3 {
   text-align: justify;
 }
 
-.main {
+.hero {
   float: left;
 }
 
@@ -166,7 +153,7 @@ h3 {
     margin-right: 2%;
   }
 
-  .asides {
+  .asides-div {
     width: 90%;
     height: 50%;
     padding: 0;
@@ -175,7 +162,7 @@ h3 {
     margin-right: auto;
   }
 
-  .main {
+  .hero {
     float: none;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +171,7 @@ h3 {
     margin-top: 3%;
   }
 
-  .main:after {
+  .hero:after {
     position: absolute;
     top: 48%;
     left: 7.5%;
@@ -200,10 +187,14 @@ h3 {
     display: block;
   }
 
-  .main:after {
+  .hero {
+    margin-bottom: 0;
+    margin-top: 10%;
+  }
+
+  .hero:after {
     position: absolute;
-    /*border: 2px solid hotpink;*/
-    top: 22%;
+    top: 21.5%;
     left: 7%;
     color: white;
   }
@@ -211,18 +202,14 @@ h3 {
   .aside-one, .aside-two {
     display: block;
     width: 100%;
-    height: 33%;
+    height: 43%;
+    margin-bottom: 3%;
     margin: 0;
     padding: 0;
     background: #EDF2F4;
-    /*border: 2px solid blue;*/
   }
 
-  .aside-one {
-    margin-bottom: 3%;
-  }
-
-  .asides {
+  .asides-div {
     padding: 0;
     margin: 0;
     margin-right: auto;
@@ -235,7 +222,6 @@ h3 {
   }
 
   h3 {
-    /*border: 2px solid hotpink;*/
     padding-top: 2%;
     padding: 2%;
     margin: 0;
@@ -249,16 +235,12 @@ h3 {
     content: "> ";
   }
 
-  .main {
-    margin-bottom: 0;
-    margin-top: 10%;
-  }
-
   .aside-three {
     display: block;
   }
 
   .aside-three p {
+    margin: 2%;
     padding: 2%;
   }
 }
