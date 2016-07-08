@@ -129,6 +129,16 @@ h3 {
   border-radius: .3em;
 }
 
+.aside3 {
+  display: none;
+  margin-top: 3%;
+  background: white;
+  border: 2px solid blue;
+  border-radius: .3em;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .main {
   float: left;
 }
@@ -232,6 +242,10 @@ h3 {
   .main {
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  .aside3 {
+    display: block;
   }
 
 }
